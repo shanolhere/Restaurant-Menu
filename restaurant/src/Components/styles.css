@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.main-card-container {
+  /* background-color: rgb(186, 126, 241); */
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  grid-gap: 10px;
+  justify-content: space-around;
+}
+
+.card-container {
+  margin: 2rem 0;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: space-around;
+  text-align: center;
+}
+.card {
+  width: 300px;
+  height: 460px;
+  background-color: rgb(186, 126, 241);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow:2px 3px 4px solid black;
+}
+.card-body {
+  padding: 10px;
+}
+.card-name {
+  background-color: rgb(244, 244, 98, 0.6);
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+.card-category {
+  background-color: rgba(236, 104, 34, 0.6);
+  border-radius: 5px;
+  padding: 5px;
+}
+.card-title{
+    padding:10px 0;
+    color:Yellow;
+    text-transform: uppercase;
+}
+.card-description{
+    padding:12px 0;
+    line-height: 1.4rem;
+    text-align: left;
+    
+}
+.card-image{
+  margin:10px 0;
+  align-items: center;
+  width:190px;
+  height:180px;
+}
+
+.navbar {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.navbar h1 {
+  padding-bottom: 20px;
+  text-transform: capitalize;
+}
+
+/** button group styles **/
+.btn-group {
+  border-radius: 1rem;
+  text-transform: capitalize;
+}
+.btn-group__item {
+  border: none;
+  /* min-width: 6rem; */
+  padding: 1.5rem 3rem;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  margin: 0;
+  font-size: 17px;
+  box-shadow: inset 0px 0px 0px -15px rgb(186, 126, 241);
+  transition: all 300ms ease-out;
+  text-transform: capitalize;
+}
+
+.btn-group__item:hover,
+.btn-group__item:focus {
+  color: rgb(186, 126, 241);
+  box-shadow: inset 0px -20px 0px -15px rgb(186, 126, 241);
+}
+.btn-group__item:focus {
+  outline: none;
+}
+
+@media screen and (max-width:890px){
+  .main-card-container {
+    
+    grid-template-columns: repeat(2, 80px);
+    
+  }
+}
+@media screen and (max-width:660px){
+  .main-card-container {
+    
+    grid-template-columns: repeat(1, 80px);
+    
+  }
+}
